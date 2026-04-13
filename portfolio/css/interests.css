@@ -1,0 +1,87 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    color: #eaeaea;
+
+    background: linear-gradient(135deg, #0a0a0f, #12121a, #1a1030);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff10;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+nav a.active {
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* TITLE */
+.small-title {
+    color: #8aa0ff;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+h1 span {
+    color: #8aa0ff;
+}
+
+/* LIST */
+.list {
+    margin-top: 30px;
+}
+
+/* CARDS */
+.card {
+    padding: 18px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ffffff20;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+.card:hover {
+    transform: translateX(10px);
+    border-color: #8aa0ff;
+    box-shadow: 0 0 10px #8aa0ff55;
+}

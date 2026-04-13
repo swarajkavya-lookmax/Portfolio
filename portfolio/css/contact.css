@@ -1,0 +1,125 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY + ANIMATED BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    color: #eaeaea;
+
+    background: linear-gradient(
+        135deg,
+        #0a0a0f,
+        #12121a,
+        #1a1030,
+        #0a0a0f
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(18, 18, 26, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #c8a2ff33;
+}
+
+/* NAV LINKS */
+nav a {
+    color: #c8a2ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #c8a2ff;
+    font-size: 2.5rem;
+
+    text-shadow: 0 0 10px #c8a2ff,
+                 0 0 20px #c8a2ff55;
+}
+
+/* CONTENT BOXES */
+p, ul, form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background: rgba(20, 20, 40, 0.6);
+    backdrop-filter: blur(10px);
+
+    border-radius: 12px;
+    border: 1px solid #c8a2ff33;
+
+    box-shadow: 0 0 15px #c8a2ff22;
+}
+
+/* LIST STYLE */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #c8a2ff22;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* FORM INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+
+    background-color: #0f0f18;
+    border: 1px solid #c8a2ff55;
+    color: white;
+
+    border-radius: 5px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    padding: 10px;
+
+    background-color: #c8a2ff;
+    border: none;
+    color: black;
+
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a67ce0;
+}
